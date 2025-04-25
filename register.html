@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - Live Beats</title>
+  <link rel="stylesheet" href="concert.css" />
+  <style>
+    .register-section {
+      padding: 60px 20px;
+      background: url('https://source.unsplash.com/1600x900/?concert,audience') center center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #fff;
+      background-attachment: fixed;
+    }
+
+    .register-box {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .register-box h2 {
+      margin-bottom: 20px;
+      color: #f04e31;
+    }
+
+    .register-box form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .register-box input, .register-box select {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .register-box button {
+      background: #f04e31;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .register-box button:hover {
+      background: #d13e25;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Live Beats</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="concert.html#lineup">Lineup</a></li>
+          <li><a href="concert.html#tickets">Tickets</a></li>
+          <li><a href="concert.html#contact">Contact</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="register-section">
+    <div class="register-box">
+      <h2>Register for Live Beats</h2>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="tel" name="phone" placeholder="Phone Number" required />
+        <select name="ticket" required>
+          <option value="">Select Ticket Type</option>
+          <option value="General Admission">General Admission - $45</option>
+          <option value="VIP">VIP - $120</option>
+          <option value="Backstage">Backstage - $250</option>
+        </select>
+        <button type="submit">Register Now</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+</html>
